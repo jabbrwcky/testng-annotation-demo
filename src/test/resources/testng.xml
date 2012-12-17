@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+    <test name="T1" >
+        <classes>
+            <class name="net.hausherr.demo.BasicTest" />
+        </classes>
+    </test>
+    <test name="T2" preserve-order="true">
+        <classes>
+            <class name="net.hausherr.demo.TestB" />
+            <class name="net.hausherr.demo.TestA" />
+            <class name="net.hausherr.demo.BasicTest" />
+        </classes>
+    </test>
+</suite>
